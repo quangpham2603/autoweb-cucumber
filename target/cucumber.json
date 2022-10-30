@@ -1,0 +1,195 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-30T04:35:20.176Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2503917500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "testing.web.hooks.ServiceHooks.initTest()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Amazon verify title",
+        "description": "",
+        "id": "amazonhomepage-testing;amazon-verify-title;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 798836400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "testing.web.hooks.ServiceHooks.afterHooks()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2961141500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I go to the Amazon website",
+            "match": {
+              "location": "testing.web.steps.AmazonHomePageSteps.goToAmazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3964473100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I search product \"iphone 14\" in search bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone 14\"",
+                  "offset": 17
+                }
+              ],
+              "location": "testing.web.steps.AmazonHomePageSteps.searchProduct(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [Apple iPhone 13 Pro Max, 512GB, Gold - Unlocked (Renewed)] but found [TALK WORKS iPhone Charger Lightning Cable 10ft Long Heavy Duty Cord MFI Certified for Apple iPhone 13, 12, 11 Pro/Max/Mini, XR, XS/Max, X, 8, 7, 6, 5, SE, iPad, AirPods, Watch - White]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\r\n\tat org.testng.Assert.assertEquals(Assert.java:122)\r\n\tat org.testng.Assert.assertEquals(Assert.java:629)\r\n\tat org.testng.Assert.assertEquals(Assert.java:639)\r\n\tat testing.web.steps.AmazonHomePageSteps.verifyTitleFirstProduct(AmazonHomePageSteps.java:29)\r\n\tat ✽.I verify the title of first product is name \"Apple iPhone 13 Pro Max, 512GB, Gold - Unlocked (Renewed)\"(file:///D:/Training_Project/AutoWeb/src/test/resources/features/amazonHomePage.feature:7)\r\n",
+              "duration": 114994800,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I verify the title of first product is name \"Apple iPhone 13 Pro Max, 512GB, Gold - Unlocked (Renewed)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apple iPhone 13 Pro Max, 512GB, Gold - Unlocked (Renewed)\"",
+                  "offset": 44
+                }
+              ],
+              "location": "testing.web.steps.AmazonHomePageSteps.verifyTitleFirstProduct(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC1"
+          }
+        ]
+      }
+    ],
+    "name": "AmazonHomePage Testing",
+    "description": "",
+    "id": "amazonhomepage-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/amazonHomePage.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-30T04:35:30.590Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1633388100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "testing.web.hooks.ServiceHooks.initTest()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Test framework auto",
+        "description": "",
+        "id": "test-automation;test-framework-auto;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1853757500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "testing.web.hooks.ServiceHooks.afterHooks()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2042667200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I go to the facebook website",
+            "match": {
+              "location": "testing.web.steps.HomePageStep.goToFacebook()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 457055800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I fill the email \"quang99ptit@gmail.com\" and passWord \"quangml123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"quang99ptit@gmail.com\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"quangml123\"",
+                  "offset": 54
+                }
+              ],
+              "location": "testing.web.steps.HomePageStep.fillEmailAndPassWord(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 161995000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click to login button",
+            "match": {
+              "location": "testing.web.steps.HomePageStep.clickLoginButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC1"
+          }
+        ]
+      }
+    ],
+    "name": "Test automation",
+    "description": "",
+    "id": "test-automation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/homePage.feature",
+    "tags": []
+  }
+]
